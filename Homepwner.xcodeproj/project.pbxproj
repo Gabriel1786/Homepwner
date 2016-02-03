@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		B127E49D1C628A8C005279A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B127E49C1C628A8C005279A1 /* AppDelegate.swift */; };
-		B127E49F1C628A8C005279A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B127E49E1C628A8C005279A1 /* ViewController.swift */; };
 		B127E4A21C628A8C005279A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B127E4A01C628A8C005279A1 /* Main.storyboard */; };
 		B127E4A41C628A8C005279A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B127E4A31C628A8C005279A1 /* Assets.xcassets */; };
 		B127E4A71C628A8C005279A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B127E4A51C628A8C005279A1 /* LaunchScreen.storyboard */; };
+		B127E4B11C6293CD005279A1 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B127E4B01C6293CD005279A1 /* ItemsViewController.swift */; };
+		B127E4B31C6294A5005279A1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B127E4B21C6294A5005279A1 /* Item.swift */; };
+		B127E4B51C6299F0005279A1 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B127E4B41C6299EF005279A1 /* ItemStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B127E4991C628A8C005279A1 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B127E49C1C628A8C005279A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B127E49E1C628A8C005279A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B127E4A11C628A8C005279A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B127E4A31C628A8C005279A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B127E4A61C628A8C005279A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B127E4A81C628A8C005279A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B127E4B01C6293CD005279A1 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		B127E4B21C6294A5005279A1 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		B127E4B41C6299EF005279A1 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				B127E49C1C628A8C005279A1 /* AppDelegate.swift */,
-				B127E49E1C628A8C005279A1 /* ViewController.swift */,
+				B127E4B21C6294A5005279A1 /* Item.swift */,
+				B127E4B41C6299EF005279A1 /* ItemStore.swift */,
+				B127E4B01C6293CD005279A1 /* ItemsViewController.swift */,
 				B127E4A01C628A8C005279A1 /* Main.storyboard */,
 				B127E4A31C628A8C005279A1 /* Assets.xcassets */,
 				B127E4A51C628A8C005279A1 /* LaunchScreen.storyboard */,
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B127E49F1C628A8C005279A1 /* ViewController.swift in Sources */,
+				B127E4B11C6293CD005279A1 /* ItemsViewController.swift in Sources */,
+				B127E4B31C6294A5005279A1 /* Item.swift in Sources */,
+				B127E4B51C6299F0005279A1 /* ItemStore.swift in Sources */,
 				B127E49D1C628A8C005279A1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +256,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Homepwner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.br.dpcontent.Homepwner;
@@ -259,6 +268,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Homepwner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.br.dpcontent.Homepwner;
