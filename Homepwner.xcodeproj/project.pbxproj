@@ -14,6 +14,7 @@
 		B127E4B11C6293CD005279A1 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B127E4B01C6293CD005279A1 /* ItemsViewController.swift */; };
 		B127E4B31C6294A5005279A1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B127E4B21C6294A5005279A1 /* Item.swift */; };
 		B127E4B51C6299F0005279A1 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B127E4B41C6299EF005279A1 /* ItemStore.swift */; };
+		B18180CE1C7B967700D6AECD /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18180CD1C7B967700D6AECD /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B127E4B01C6293CD005279A1 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		B127E4B21C6294A5005279A1 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		B127E4B41C6299EF005279A1 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
+		B18180CD1C7B967700D6AECD /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				B127E4B21C6294A5005279A1 /* Item.swift */,
 				B127E4B41C6299EF005279A1 /* ItemStore.swift */,
 				B127E4B01C6293CD005279A1 /* ItemsViewController.swift */,
+				B18180CD1C7B967700D6AECD /* ItemCell.swift */,
 				B127E4A01C628A8C005279A1 /* Main.storyboard */,
 				B127E4A31C628A8C005279A1 /* Assets.xcassets */,
 				B127E4A51C628A8C005279A1 /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 				B127E4B31C6294A5005279A1 /* Item.swift in Sources */,
 				B127E4B51C6299F0005279A1 /* ItemStore.swift in Sources */,
 				B127E49D1C628A8C005279A1 /* AppDelegate.swift in Sources */,
+				B18180CE1C7B967700D6AECD /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +299,7 @@
 				B127E4AD1C628A8C005279A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
