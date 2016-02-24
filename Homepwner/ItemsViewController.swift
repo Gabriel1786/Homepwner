@@ -80,6 +80,14 @@ class ItemsViewController: UITableViewController {
         cell.serialNumberLabel.text = item.serialNumber
         cell.valueLabel.text = "$\(item.valueInDollars)"
         
+        // Bronze Challenge
+        if (item.valueInDollars < 50) {
+            cell.valueLabel.textColor = UIColor.greenColor()
+        } else {
+            cell.valueLabel.textColor = UIColor.redColor()
+        }
+        
+        
         return cell
     }
     
