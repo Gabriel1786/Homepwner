@@ -42,12 +42,12 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="leadingMargin" secondItem="8cH-md-rGI" secondAttribute="leading" id="0dq-tj-mrt"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Y2X-hQ-des" secondAttribute="trailing" id="17X-6P-bGM"/>
                                         <constraint firstItem="8cH-md-rGI" firstAttribute="top" secondItem="QFO-Pi-132" secondAttribute="bottom" constant="6" id="38J-Z3-yNY"/>
                                         <constraint firstItem="8cH-md-rGI" firstAttribute="bottom" secondItem="Krb-f0-oxa" secondAttribute="bottomMargin" id="DcZ-mF-5KB"/>
                                         <constraint firstAttribute="leadingMargin" secondItem="QFO-Pi-132" secondAttribute="leading" id="FAI-ai-oxb"/>
                                         <constraint firstItem="QFO-Pi-132" firstAttribute="top" secondItem="Krb-f0-oxa" secondAttribute="topMargin" id="Nbj-V7-0qy"/>
+                                        <constraint firstItem="8cH-md-rGI" firstAttribute="leading" secondItem="Krb-f0-oxa" secondAttribute="leadingMargin" constant="8" id="ges-me-uvi"/>
                                         <constraint firstItem="Y2X-hQ-des" firstAttribute="centerY" secondItem="Krb-f0-oxa" secondAttribute="centerY" id="yKa-cl-Ura"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -89,7 +89,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ffk-Gl-X7S">
-                                <rect key="frame" x="28" y="72" width="544" height="520"/>
+                                <rect key="frame" x="28" y="72" width="544" height="476"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ngp-Ou-vg0">
                                         <rect key="frame" x="0.0" y="0.0" width="544" height="30"/>
@@ -149,25 +149,44 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="249" text="Date Created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpl-ni-r8m">
-                                        <rect key="frame" x="0.0" y="114" width="544" height="406"/>
+                                        <rect key="frame" x="0.0" y="114" width="544" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="248" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="Tfs-6K-1He">
+                                        <rect key="frame" x="0.0" y="143" width="544" height="333"/>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="PQ3-QB-sWv" firstAttribute="leading" secondItem="ish-WX-tlN" secondAttribute="leading" id="Kwd-Bx-bnp"/>
                                     <constraint firstItem="ish-WX-tlN" firstAttribute="leading" secondItem="GR7-T0-UUs" secondAttribute="leading" id="Q0O-X1-Lp9"/>
                                 </constraints>
                             </stackView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="an3-Ix-nML">
+                                <rect key="frame" x="20" y="556" width="580" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Ekm-Dc-Rfh"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="camera" id="OV5-cw-Myx">
+                                        <connections>
+                                            <action selector="takePicture:" destination="RBC-pZ-taP" id="e2t-WV-sOb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="an3-Ix-nML" firstAttribute="top" secondItem="ffk-Gl-X7S" secondAttribute="bottom" constant="8" id="8UO-Lu-ReL"/>
                             <constraint firstItem="ffk-Gl-X7S" firstAttribute="top" secondItem="cEt-md-UXz" secondAttribute="bottom" constant="8" id="PRA-dM-myJ"/>
+                            <constraint firstItem="an3-Ix-nML" firstAttribute="leading" secondItem="cGU-lf-8wW" secondAttribute="leadingMargin" id="bVa-hy-vzN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ffk-Gl-X7S" secondAttribute="trailing" constant="8" id="cQE-TV-ckK"/>
-                            <constraint firstItem="RAo-17-s8B" firstAttribute="top" secondItem="ffk-Gl-X7S" secondAttribute="bottom" constant="8" id="ccY-bY-MmV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="an3-Ix-nML" secondAttribute="trailing" constant="-20" id="cbJ-lB-FtC"/>
                             <constraint firstItem="ffk-Gl-X7S" firstAttribute="leading" secondItem="cGU-lf-8wW" secondAttribute="leadingMargin" constant="8" id="wpz-mt-BOf"/>
+                            <constraint firstItem="RAo-17-s8B" firstAttribute="top" secondItem="an3-Ix-nML" secondAttribute="bottom" id="wvx-JK-lss"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="3QL-QL-VG1" appends="YES" id="nUt-9a-8VR"/>
@@ -175,6 +194,7 @@
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="kpl-ni-r8m" id="7KT-qm-SeT"/>
+                        <outlet property="imageView" destination="Tfs-6K-1He" id="hjt-ic-1z0"/>
                         <outlet property="nameField" destination="PQ3-QB-sWv" id="wpX-gR-5bv"/>
                         <outlet property="serialNumberField" destination="ish-WX-tlN" id="d9P-C9-bMC"/>
                         <outlet property="valueField" destination="GR7-T0-UUs" id="Te8-7E-GcG"/>
@@ -187,7 +207,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2210" y="104"/>
+            <point key="canvasLocation" x="2250" y="118"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9YM-S5-qgY">

@@ -16,6 +16,7 @@
 		B127E4B51C6299F0005279A1 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B127E4B41C6299EF005279A1 /* ItemStore.swift */; };
 		B18073811C7E5AA500884D77 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18073801C7E5AA500884D77 /* DetailViewController.swift */; };
 		B18180CE1C7B967700D6AECD /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18180CD1C7B967700D6AECD /* ItemCell.swift */; };
+		B1A5300C1C9891E600EC4596 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5300B1C9891E600EC4596 /* ImageStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B127E4B41C6299EF005279A1 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 		B18073801C7E5AA500884D77 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B18180CD1C7B967700D6AECD /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		B1A5300B1C9891E600EC4596 /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				B127E49C1C628A8C005279A1 /* AppDelegate.swift */,
 				B127E4B21C6294A5005279A1 /* Item.swift */,
 				B127E4B41C6299EF005279A1 /* ItemStore.swift */,
+				B1A5300B1C9891E600EC4596 /* ImageStore.swift */,
 				B18180CD1C7B967700D6AECD /* ItemCell.swift */,
 				B127E4B01C6293CD005279A1 /* ItemsViewController.swift */,
 				B18073801C7E5AA500884D77 /* DetailViewController.swift */,
@@ -153,6 +156,7 @@
 				B127E4B51C6299F0005279A1 /* ItemStore.swift in Sources */,
 				B18073811C7E5AA500884D77 /* DetailViewController.swift in Sources */,
 				B127E49D1C628A8C005279A1 /* AppDelegate.swift in Sources */,
+				B1A5300C1C9891E600EC4596 /* ImageStore.swift in Sources */,
 				B18180CE1C7B967700D6AECD /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
